@@ -5,6 +5,8 @@
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/ryangjchandler/filament-minimal-tabs/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/ryangjchandler/filament-minimal-tabs/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/ryangjchandler/filament-minimal-tabs.svg?style=flat-square)](https://packagist.org/packages/ryangjchandler/filament-minimal-tabs)
 
+![](/assets/example.png)
+
 This package provides a small stylesheet that creates a more minimal and modern design for Filament's `Tabs` component.
 
 ## Installation
