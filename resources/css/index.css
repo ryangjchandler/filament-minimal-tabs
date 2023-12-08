@@ -1,1 +1,24 @@
-@import '../../vendor/filament/filament/resources/css/theme.css';
+.fi-fo-tabs-minimal.fi-contained {
+    @apply bg-transparent dark:bg-transparent rounded-none shadow-none ring-0;
+
+    .fi-tabs {
+        @apply px-0 gap-x-3 shadow-[inset_0_-1px_theme(colors.gray.200)] dark:shadow-[inset_0_-1px_theme(colors.gray.700)];
+
+        &.fi-contained {
+            @apply border-b-0 px-0 py-0;
+        }
+    }
+
+    .fi-tabs-item {
+        @apply pb-4.5 rounded-none transition ease-in-out duration-300;
+
+        &.fi-active {
+            box-shadow: inset 0px -2px 0px 0px theme('colors.primary.600');
+            @apply dark:bg-transparent;
+        }
+    }
+
+    .fi-fo-tabs-tab:not(.invisible) {
+        @apply bg-white rounded-xl shadow-sm ring-1 ring-gray-950/5 dark:bg-gray-900 dark:ring-white/10 mt-6;
+    }
+}
