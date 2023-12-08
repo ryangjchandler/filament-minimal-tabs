@@ -1,4 +1,4 @@
-.fi-fo-tabs-minimal.fi-contained {
+.fi-tabs-minimal.fi-contained {
     @apply bg-transparent dark:bg-transparent rounded-none shadow-none ring-0;
 
     .fi-tabs {
@@ -14,11 +14,11 @@
 
         &.fi-active {
             box-shadow: inset 0px -2px 0px 0px theme('colors.primary.600');
-            @apply dark:bg-transparent;
+            @apply dark:bg-transparent bg-transparent;
         }
     }
 
-    .fi-fo-tabs-tab:not(.invisible) {
+    .fi-fo-tabs-tab:not(.invisible), .fi-in-tabs-tab:not(.invisible) {
         @apply bg-white rounded-xl shadow-sm ring-1 ring-gray-950/5 dark:bg-gray-900 dark:ring-white/10 mt-6;
     }
 }

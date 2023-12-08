@@ -13,7 +13,7 @@ class TabsMixin
     {
         return function () {
             $this->extraAttributes([
-                'class' => 'fi-fo-tabs-minimal',
+                'class' => 'fi-tabs-minimal',
             ]);
 
             return $this;

@@ -2,7 +2,8 @@
 
 namespace RyanChandler\FilamentMinimalTabs;
 
-use Filament\Forms\Components\Tabs;
+use Filament\Forms\Components as Forms;
+use Filament\Infolists\Components as Infolists;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
@@ -18,6 +19,7 @@ class MinimalTabsServiceProvider extends PackageServiceProvider
 
     public function packageBooted()
     {
-        Tabs::mixin(new TabsMixin());
+        Forms\Tabs::mixin(new TabsMixin());
+        Infolists\Tabs::mixin(new TabsMixin());
     }
 }
