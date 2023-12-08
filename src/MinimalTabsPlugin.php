@@ -5,8 +5,6 @@ namespace RyanChandler\FilamentMinimalTabs;
 use Filament\Contracts\Plugin;
 use Filament\Panel;
 use Filament\Support\Assets\Css;
-use Filament\Support\Assets\Theme;
-use Filament\Support\Color;
 use Filament\Support\Facades\FilamentAsset;
 
 class MinimalTabsPlugin implements Plugin
