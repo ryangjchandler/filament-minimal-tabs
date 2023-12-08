@@ -1,6 +1,6 @@
 {
     "name": "ryangjchandler/filament-minimal-tabs",
-    "description": "This is my package filament-minimal-tabs",
+    "description": "A clean and minimal design for the Tabs component in Filament.",
     "keywords": [
         "ryangjchandler",
         "laravel",

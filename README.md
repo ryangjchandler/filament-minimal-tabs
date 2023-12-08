@@ -1,54 +1,39 @@
-# This is my package filament-minimal-tabs
+# A clean and minimal design for the Tabs component in Filament.
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/ryangjchandler/filament-minimal-tabs.svg?style=flat-square)](https://packagist.org/packages/ryangjchandler/filament-minimal-tabs)
 [![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/ryangjchandler/filament-minimal-tabs/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/ryangjchandler/filament-minimal-tabs/actions?query=workflow%3Arun-tests+branch%3Amain)
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/ryangjchandler/filament-minimal-tabs/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/ryangjchandler/filament-minimal-tabs/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/ryangjchandler/filament-minimal-tabs.svg?style=flat-square)](https://packagist.org/packages/ryangjchandler/filament-minimal-tabs)
 
-
-
-This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
+This package provides a small stylesheet that creates a more minimal and modern design for Filament's `Tabs` component.
 
 ## Installation
 
-You can install the package via composer:
+You can install the package via Composer:
 
 ```bash
 composer require ryangjchandler/filament-minimal-tabs
 ```
 
-You can publish and run the migrations with:
+Publish the package's assets:
 
-```bash
-php artisan vendor:publish --tag="filament-minimal-tabs-migrations"
-php artisan migrate
-```
-
-You can publish the config file with:
-
-```bash
-php artisan vendor:publish --tag="filament-minimal-tabs-config"
-```
-
-Optionally, you can publish the views using
-
-```bash
-php artisan vendor:publish --tag="filament-minimal-tabs-views"
-```
-
-This is the contents of the published config file:
-
-```php
-return [
-];
+```sh
+php artisan filament:assets
 ```
 
 ## Usage
 
+This package does not modify the default styles for the tabs. You must opt-in to the styling changes at the component level instead.
+
 ```php
-$filamentMinimalTabs = new RyanChandler\FilamentMinimalTabs();
-echo $filamentMinimalTabs->echoPhrase('Hello, RyanChandler!');
+Tabs::make()
+    ->minimal()
+    ->tabs([
+        // ...
+    ])
 ```
+
+The `->minimal()` method simply adds a class to the component which is targeted by the stylesheet.
 
 ## Testing
 
