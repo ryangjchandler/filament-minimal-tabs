@@ -22,6 +22,15 @@ Publish the package's assets:
 php artisan filament:assets
 ```
 
+Register the plugin with your `PanelProvider`:
+
+```php
+use RyanChandler\MinimalTabs\MinimalTabsPlugin;
+
+$panel
+    ->plugin(MinimalTabsPlugin::make());
+```
+
 ## Usage
 
 This package does not modify the default styles for the tabs. You must opt-in to the styling changes at the component level instead.
