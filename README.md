@@ -33,17 +33,7 @@ $panel
 
 ## Usage
 
-This package does not modify the default styles for the tabs. You must opt-in to the styling changes at the component level instead.
-
-```php
-Tabs::make()
-    ->minimal()
-    ->tabs([
-        // ...
-    ])
-```
-
-The `->minimal()` method simply adds a class to the component which is targeted by the stylesheet.
+After registering the plugin, all tabs inside of a Filament panel will have the minimal styling applied automatically. This includes **form tabs**, **infolist tabs**, **relation manager tabs**, and **table filter tabs**.
 
 ## Testing
 
