@@ -2,6 +2,10 @@
 
 All notable changes to `filament-minimal-tabs` will be documented in this file.
 
+## v1.2.0 - 2023-12-12
+
+* Add support for uncontained tabs.
+
 ## v1.1.0 - 2023-12-08
 
 * Add support for `Tabs` inside of `Infolists`.
